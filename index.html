@@ -23,8 +23,7 @@
     }
     .bookshelf-container {
       position: relative;
-      width: 100%
-      height: 100vh;
+      height: 400px;
       perspective: 800px;
       background: #f0f0f0;
       display: flex;
@@ -35,7 +34,7 @@
     .shelf-bar {
       position: absolute;
       bottom: 0; left: 0;
-      width: 100%; height: 80px;
+      width: 100%; height: 60px;
       background: #8B4513;
       box-shadow: 0 -4px 6px rgba(0,0,0,0.3);
       z-index: 1;
@@ -122,13 +121,12 @@
       z-index: 2;
     }
     .modal-close:hover { background: #d02a1f; }
-
+    
     #demo-no .modal-left p,
     #demo-no .modal-right p {
       hyphens: none;
       text-align: left;
     }
-    /* 2) AUTO HYPHENS, JUSTIFY */
     #demo-auto .modal-left p,
     #demo-auto .modal-right p {
       hyphens: auto;
@@ -136,7 +134,6 @@
       text-justify: inter-word;
       word-wrap: break-word;
     }
-
     #demo-just .modal-left p,
     #demo-just .modal-right p {
       hyphens: none;
@@ -147,6 +144,8 @@
   </style>
 </head>
 <body>
+
+  <h1>Bookshelf Demo: 3-Way Hyphenation/Justify</h1>
   <section class="demo" id="demo-just">
     <h2>No Hyphens + Justify</h2>
     <div class="bookshelf-container">
